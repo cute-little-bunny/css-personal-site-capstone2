@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunny Garden</title>
+  <style>
+    .garden {
+        display: grid;
+        height: 700px;
+        width: 950px;
+        background-color: yellowgreen;
+        border: 5px solid burlywood;
+        grid-template-columns: repeat(6, 150px);
+        grid-template-rows: repeat(5, 130px);
+        gap: 10px;
+    }
+
+    .flowerbead {
+        grid-column-start: span 4;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .flowerbead2 {
+        grid-column-start: span 5;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flowerbead3 {
+        grid-column-start: span 5;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flower1 {
+        height: 10px; 
+    }
+
+    .carot {
+        height: 35px;
+    }
+
+    .carotbead {
+        background-color: cornsilk;
+        grid-row-start: 3;
+    }
+
+    .brocolli {
+        height: 35px;
+    }
+
+    .brocollibead {
+        background-color: cornsilk;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .treearea {
+        background-color: cornsilk;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display: flex;
+        justify-content: space-evenly; 
+    }
+
+    .treearea1 {
+        background-color: cornsilk;
+        grid-column-start: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;     
+    }
+
+
+    .atcontainer {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .appletree {
+        display: flex;
+        flex-wrap: wrap;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: yellowgreen;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .apple {
+        height: 20px;
+    }
+
+    .trunk {
+        height: 30px;
+        width: 15px;
+        background-color: brown;
+    }
+
+    .strbead {
+        background-color: cornsilk;
+        grid-column-start: 0;
+        grid-row-start: 2;
+    }
+
+    .strawberry {
+        height: 10px;
+    }
+
+    .pond {
+        margin-left: 35px;
+        margin-top: 15px;
+        height: 100px;
+        width: 250px;
+        background-color: deepskyblue;
+        border-radius: 50%;
+        grid-column-start: 3;
+        grid-row-start: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .goldenfish {
+        height: 25px;
+    }
+
+    .dog {
+        grid-row-start: 5;
+        
+    }
+    .dog img {
+        width: 150px;
+    }
+
+    .bunny1 {
+        height: 50px;
+        border-radius: 50%;
+        grid-row-start: 3;
+        margin-left: 70px;
+        margin-top: 35px;
+    }
+
+    .bunny2 {
+        height: 50px;
+        border-radius: 50%;
+        grid-row-start: 3;
+        grid-column-start: 5;
+        margin-left: 40px;
+        margin-top: 35px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="garden"> 
+    <div class="carotbead">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+        <img class="carot" src="./assets/images/carot.png" alt="carot image">
+    </div>
+
+<div class="treearea" >
+    
+    <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+
+     <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+      <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+
+     <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+     <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+     <div class="atcontainer">
+        <div class="appletree" >
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            <img class="apple" src="./assets/images/apple.png" alt="apple image">
+        </div>
+        <div class="trunk" > </div>
+     </div>
+</div>
+
+<div class="brocollibead">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+    <img class="brocolli" src="./assets/images/brocolli.png" alt="brocolli image">
+</div>
+
+<div class="treearea1" >
+     <div class="atcontainer">
+            <div class="appletree" >
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            </div>
+            <div class="trunk" > </div>
+         </div>
+
+         <div class="atcontainer">
+            <div class="appletree" >
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+                <img class="apple" src="./assets/images/apple.png" alt="apple image">
+            </div>
+            <div class="trunk" > </div>
+         </div>
+
+ </div>
+
+
+ 
+ <div class="flowerbead"> 
+ <div class="row1">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+ </div>
+  <div class="row2">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+ </div>
+  <div class="row3">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+ </div>
+
+ </div>
+
+
+<div class="flowerbead2"> 
+    <div class="row1">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+    <div class="row2">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+    <div class="row3">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+ </div>
+
+<div class="flowerbead3"> 
+    <div class="row1">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+    <div class="row2">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+    <div class="row3">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+        <img class="flower1" src="./assets/images/flower.png" alt="flower image">
+    </div>
+</div>
+
+    
+
+<div class="pond"> <img class="goldenfish" src="./assets/images/fish.png" ></div>
+
+    <div class="strbead">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+        <img class="strawberry" src="./assets/images/strawberry.png" alt="strawberry image">
+    </div>
+
+    <div class="dog"><img src="./assets/images/dog.png" alt="dog image"></div>
+
+    <img class="bunny1" src="./assets/images/photo.jpg" alt="bunny image">
+    <img class="bunny2" src="./assets/images/photo.jpg" alt="bunny image">
+</div>
+
+</body>
+
+</html>     

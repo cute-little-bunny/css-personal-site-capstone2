@@ -1,0 +1,156 @@
+body {
+text-align: center;
+margin:0;
+
+font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style:italic;
+}
+
+h1 {
+    font-size: 60px;
+    display: inline-block;
+    margin-top: 150px;
+}
+
+h2, h3 {
+    color: yellowgreen;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    line-height: 2;
+}
+
+.profile {
+    margin-bottom: 50px;
+}
+
+.contact-me {
+    margin: 50px auto;
+}
+
+
+.project-row {
+    width: 50%;
+    margin-left: 25%;
+    padding-top:  50px;
+    padding-bottom: 75px;
+    text-align:left;
+}
+
+
+.projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.top-container {
+    margin: 0;  
+    padding: 0;
+    display: block;
+    background-color:yellowgreen;
+    color: white;
+    position: relative;  
+}
+
+
+.middle-container {
+    margin: 50px auto; 
+}
+
+.bottom-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:yellowgreen;
+}
+
+ .bunny{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.project1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.project2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float: right;
+}
+
+
+.cloud1 {
+    display: block;
+    height: 65px;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+}
+
+.cloud2 {
+    height: 70px;
+    position: absolute;
+    top: 400px;
+    left: 130px;
+}
+
+.bottom-container{
+
+    color: white;
+}
+
+.bottom-container a{
+    color: green;
+    text-decoration-line: none;
+}
+
+.project-row a {
+    text-decoration-line: none;
+    display: block;
+}
+
+.project-row a:hover h3{
+    color: green;
+}
+
+
+a:hover {
+    color: white;
+}
+
+hr {
+    width: 75px;
+    color: #EAF6F6;
+    border-style: dotted;
+    border-width: 5px;
+    border-bottom: none;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration-line: none;
+}
+
+.contact-me p{
+    margin-bottom: 50px;
+}
+.top-container p{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
